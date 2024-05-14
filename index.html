@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor (Part 1)</title>
+
+    <link rel="icon" href="https://i.ibb.co/9Ztfdxp/ROBOTICS.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dropdown-sidebar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="quizSection.css">
+</head>
+<body>
+
+    <!-- 3 columns -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/#home"><img src="https://i.ibb.co/fChm6F5/home-icon-silhouette.png" alt=""> Home ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <ul  class="dropdown">
+                            <li><a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/#accordion-steps">Begin?</a></li>
+                            <li><a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/#guidance-div">10_Topics</a></li>
+                            <li><a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/#accordion-questions"> Questions</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                
+                <li class="with-dropdown">
+                    <a href="#topic-buttons"><img src="https://i.ibb.co/8XYKTgh/reading-book-1.png" alt=""> Topics ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="https://ashl3y-lin.github.io/ANS-robotic_movement-part1/">Movement</a></li>
+                        <li><a href="#">Motor</a></li>
+                        <li><a href="#">Display</a></li>
+                        <li><a href="#">Sound</a></li>
+                        <li><a href="#">Control</a></li>
+                        <li><a href="#">Sensors</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Operator</a></li>
+                        <li><a href="#">Variable</a></li>
+                        <li><a href="#">My Block</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#wro"><img src="https://i.ibb.co/Drnm7cM/competition.png" alt=""> About WRO ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="#">WRO?</a></li>
+                        <li><a href="#">ANS_journey</a></li>
+                        <li><a href="#">Tips</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="wrapper">
+        <div class="header-content" id="movement-home">
+            <h1>Motor</h1>
+            <div>
+                <p>
+                    <strong>The motor blocks make only 1 motor to move.</strong> 
+                    <!-- <p>➡️ Observation: </p>
+                    <p>Degrees is recommened. It is the amount of rotation in the wheel.</p>
+                    <p>You connect the motors to your wheels</p> -->
+                    <strong>
+                        <p>(In my case, I connect  Motor A)</p>
+                    </strong>
+                </p>
+                <p>-> -> Negative number or counter-clockwise: is UP</p>
+
+                    <p>-> -> Positive number or clockwise: is DOWN</p>
+                    
+                    
+            </div>
+            <!-- <div class="side-side">
+                <a href="https://ibb.co/HzCpGVx"><img src="https://i.ibb.co/DCYgwt8/Pink-arrows.png" alt="Pink-arrows" height="150"></a>
+                <img src="https://i.ibb.co/QKZ28Yz/Pink-blocks.png" alt="Pink-blocks" height="150">
+            </div> -->
+             
+        </div>
+            
+            <div class="side-bar">
+                <div class="menu">
+                    <div class="item">
+                        <div class="motor-logo"><a href="#movement-home"><img src="https://i.ibb.co/VLmzBrQ/Blue-wheel.png" height="90" alt="motor-logo"></a></div>
+                        
+
+                        <a href="#movement-home"><span class="side-bar-title-1">Motor</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#below-header" class="sub-item"> Introduction</a></li>
+                            <li><a href="#motor-build" class="sub-item"> Build it</a></li>
+                            <li><a href="#arm-up" class="sub-item">Motor Up (fast)</a></li>
+                            <li><a href="#arm-down" class="sub-item">Motor down (fast)</a></li>
+                            <li><a href="#clock-rotation" class="sub-item">clockwise and counter-clockwise</a></li>
+                            <li><a href="#up-container" class="sub-item">Motor Up (slow)</a></li>
+                            <li><a href="#down-container" class="sub-item">Motor down (slow)</a></li>
+                            <li><a href="#" class="sub-item"> Challenge</a></li>
+                            <li><a href="#movement-key-takeaway" class="sub-item">Key-Takeaways</a></li>
+                            <li><a href="#motor-quiz" class="sub-item">Quiz</a></li>
+                            <li><a href="#challengeYou" class="sub-item">Challenge for You</a></li>
+                        </ul>
+
+                        <!-- <a href="different-page.html#section1">Section One</a> -->
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- The introduction section -->
+        <div class="three-columns grid-container-height" id="below-header">
+            <div class="grid-item">
+                <div class="flex-item">
+                   
+                    <img src="https://i.ibb.co/YpNbsnd/Screenshot-2024-05-13-at-11-50-59.png" alt="Screenshot-2024-05-13-at-11-50-59">
+                    <p>We are using medium motor. Motor connected to Port A</p>
+                </div>
+            </div>
+            <div class="grid-item unite">
+                <div class="flex-item">
+                    <img src="https://s12.gifyu.com/images/SavRH.gif" alt="Robotic T shirt">
+
+                </div>
+                <div class="flex-item">
+                   <img src="https://i.ibb.co/z8SsRrv/Screenshot-2024-05-03-at-21-12-45.png" alt="motor-intro 2 codes">
+                   <p>The 2 codes beside each other are the same. They do the same thing.</p>
+                </div>
+            </div>
+                
+        </div>
+        <!-- Open div-->
+<div class="grid-container">    
+    
+    
+        <div class="main-container grid-item together pink-background" id="motor-build">
+            <div class="one-grid flex-item">
+                <div class="letter-both">
+                    <h2>Design the Robot's Arm by:</h2>
+                </div>
+                <div class="flex-item">
+                    <div>
+                        <img src="https://i.ibb.co/dtDJx6F/IMG-2022.jpg" alt="IMG-2022">
+                   </div>
+                </div>
+
+                <div class="flex-item">
+                     <a href="https://ashl3y-lin.github.io/Way-1_Exploration-Arm_Design/"><button class="design_button">Click here to find the guide</button></a>
+                </div>
+            </div>
+        </div>
+
+
+              
+
+            <!-- Motor upward -->
+            <div id="arm-up" class="grid-item together pink-background">
+                <div class="flex-grid flex-container flex-item">
+
+                        <div class="both2">
+                            <h2>Motors moving UP</h2>
+                        </div>
+                        
+                        <div class="both3">
+                            <img src="https://s12.gifyu.com/images/SaP6K.gif" alt="IMG 1870 2">
+                        </div>
+
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/BzY0j8r/Screenshot-2024-05-13-at-14-51-41.png" alt="Screenshot-2024-05-13-at-14-51-41" >
+                        <p>Or it  can also be:</p>
+                        <img src="https://i.ibb.co/71LpLj4/BLUE2.png" alt="BLUE2" >
+                        <p>Motor A moves 250 degrees counter-clockwise(up) at the speed of 75</p>
+                        <p>Notice how fast the motor move upward.</p>
+                        <strong>
+                            <p>Because  this motor is placed like that, counter-clockwise/negative numbers make the motor move up.</p>
+                        </strong>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Motor downward -->
+            <div id="arm-down" class="grid-item together pink-background">
+                <div class="flex-grid flex-container flex-item">
+
+                        <div class="both2">
+                            <h2>Motors moving DOWN </h2>
+                        </div>
+                        
+                        <div class="both3">
+                            <img src="https://s12.gifyu.com/images/SaP6H.gif" alt="IMG 1871 2">
+                            
+                        </div>
+
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/x8g3p5P/BLUE3.png" alt="BLUE3">
+                        
+                        <p>Or it can also be:</p>
+                        <img src="https://i.ibb.co/qF6JTKK/BLUE4.png" alt="BLUE4" >
+                        <p>Motor A moves 250 degrees clockwise(down) at the speed of 75%</p>
+                        <strong>
+                            <p>Because  this motor is placed like that, clockwise/positive numbers make the motor move down.</p>
+                        </strong>
+                       
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Learn what it's clockwise and counterclockwise -->
+            <div class="grid-item" id="clock-rotation">
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <h2>Clockwise is:</h2>
+                    </div>
+     
+                    <div class="flex-item">
+                        <img src="https://i.pinimg.com/originals/c5/e0/74/c5e074538502ada539e18c812e055611.gif" alt="clock-gif">
+                    </div>
+                    <div class="paragraph">
+                        <p>Moves in the direction of the clock </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <h2 class="center">Rotations with the clock</h2>
+                    </div>
+                    <div class="flex-item">
+                       <img src="https://www.mathsisfun.com/geometry/images/clockwise.svg" alt="clock">
+                    </div>
+                    <div class="paragraph center">
+                       <p> ⬅ Look at the difference ➡</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <h2>Counter-clockwise is:</h2>
+                    </div>
+                    <div class="flex-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Clock_reversed.gif" alt="counter-clock-gif">
+                    </div>
+                    <div class="paragraph">
+                        <p>It moves as if time goes back, going to  the opposite direction as the clock.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Motor up with red container -->
+            <div id="up-container" class="grid-item together pink-background flex-container-half">
+                <div class="flex-grid flex-container flex-item">
+
+                        <div class="both2">
+                            <h2>Motors moving Up slowly </h2>
+                        </div>
+                        
+                        <div class="both3">
+                            <img src="https://s12.gifyu.com/images/SaP6N.gif" alt="IMG 1873 2" height="50">
+                        </div>
+                </div>
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/J2mdJ24/BLUE5.png" alt="BLUE5">
+                        
+                        <p>Motor A moves 180 degrees counter-clockwise(up) at the speed of 15%</p>
+                        <p>Notice that the degrees are less. This is because the motor cannot close fully due to the object its grabbing.</p>
+                       <strong>
+                           <p>I know this might be confusing, but specifically in this robot, UP will be negative number.</p>
+                       </strong>
+                    </div>
+            </div>
+
+            <!-- Motor up with red container -->
+            <div id="down-container" class="grid-item together pink-background flex-container-half">
+                <div class="flex-grid  flex-item">
+
+                        <div class="both2">
+                            <h2>Motors moving DOWN slowly </h2>
+                        </div>
+                        
+                        <div class="img-smaller">
+                            <img src="https://s12.gifyu.com/images/SaP6x.gif" alt="IMG 1874 2">
+                        </div>
+                </div>
+
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/bdS6LSY/BLUE6.png" alt="BLUE6" >
+                        <p>Motor A moves 180 degrees -clockwise(down) at the speed of 15%</p>
+                        <p>You can try with a faster speed, see what happens to the object.</p>
+
+                        <strong>
+                            <p>I know this might be confusing, but specifically in this robot, DOWN will be positive number.</p>
+                        </strong>
+                       
+                    </div>
+                
+            </div>
+
+            <div id="motor-challenge1" class="grid-item together pink-background"> <!--flex-container-->
+                <div class="flex-container flex-item">
+
+                        <div class="both2">
+                            <h2>Challenge: grab and turn</h2>
+                        </div>
+                        
+                        <div class="both3">
+                            <img src="https://s12.gifyu.com/images/SaoMZ.gif" alt="Movem pink (3)">
+                        </div>
+
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/1KWdVDg/BLUE-CHALL1.png" alt="BLUE-CHALL1">
+                        
+                       <p>You first grab (with motor A) the red container, turn left, and let go of the object.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Observation area -->
+            <div class="grid-item together no-background" id="movement-key-takeaway">
+                <div class="label">
+                    <h3>Key-Takeaways</h3>
+                </div>
+                <p>
+                    <ul class="observation-list">
+                        <li>-> You can change how fast the robot moves: changing the speed.</li>
+                        <li>-> Degrees: how much the robot moves.</li>
+
+                        <li>--------</li>
+                        <li><strong>Observations:</strong></li>
+                        
+                        <div class="padding-left">
+                            <strong>
+                                <p>-> -> Negative number or counter-clockwise: is UP</p>
+                                <p>-> -> Positive number or clockwise: is DOWN</p>
+                            </strong>
+                            <p>Don't get confused!</p>
+                        </div>
+                        <br>
+
+                        <li><strong>More Observations:</strong></li>
+                        <div class="padding-left">
+                            <li>->Slower the speed, the better it grabs objects.</li>
+                            <li>-> If your robot stops and it's very tight, it's because it has too much degrees.</li>
+                            <li> Solution:
+                                <div class="padding-left">
+                                    <li>-> Change the degrees to less</li>
+                                    <li>-> Check the arm, the lego pieces might be loose</li>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </p>
+
+
+    
+
+            <!-- Quiz Sction -->
+            <div class="grid-item together pink-background" id="motor-quiz">
+                <!-- Quiz section -->
+                <div class="app">
+                    <h1>Time for a quiz!</h1>
+                    <div class="quiz">
+                        <h2 id="question"> Question goes here</h2>
+                        <div id="answer-buttons">
+                            <button class="btn"> Answer 1</button>
+                            <button class="btn"> Answer 2</button>
+                            <button class="btn"> Answer 3</button>
+                            <button class="btn"> Answer 4</button>
+                        </div>
+                        <button id="next-button">Next</button>
+                    </div>
+                </div>
+            </div>
+
+<!-- Challenge for you section -->
+            <div class="grid-item together pink-background" id="challengeYou">
+                <div class="flex-grid flex-container flex-item challenge-container">
+                    <div class="letter-both">
+                        <h2>Challenge for you</h2>
+                    </div>
+                    <div class="flex-item">
+                        <img src="https://s12.gifyu.com/images/SaPR5.gif" alt="IMG 1920">
+                        <p>Hint:</p>
+                        <p>The speed for motor A is 20%</p>
+                        <p>The speed for the wheels is 50%</p>
+                    </div>
+
+                    <div class="flex-item">
+                        <div id="hide-box">
+                            
+                            <img src="https://i.ibb.co/QDHwYMp/BLUE-CHALLENGE-YOU.png" alt="BLUE-CHALLENGE-YOU">
+                        </div>
+                        <button class="unhide-button" onclick="ShowAnswer()">Show Answer</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+    </div>
+
+    <!-- Buttons for next -->
+    <div class="bottom-buttons">
+        <a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/"><button id="home" class="home-icon"> <img src="https://i.ibb.co/fChm6F5/home-icon-silhouette.png" alt="home-icon-silhouette" height="30"></button> </a>
+        <a href=""><button id="motors" class="next-button">Next: Display <img src="https://i.ibb.co/0CWHhM7/icons8-arrow-full-white.png" alt="icons8-arrow-full-white" height="30" ></button></a>
+       
+    </div>
+
+
+          <!-- Footer -->
+        <div class="footer-container">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/#home">Home</a></li>
+                    <li><a href="https://ashl3y-lin.github.io/ANS_Robotic_Home/#topic-buttons">Topics</a></li>
+                    <li><a href="https://ashl3y-lin.github.io/ANS-robotic_About-WRO/#wro">About WRO</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Ashley Lin </span> | Senior 2024 | American Nicaraguan School</p>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+    <script src="quizSection.js"></script>
+    <script src="showAnswer.js"></script>
+    <script src="scroll-smooth.js"></script>
+</body>
+</html>

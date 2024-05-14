@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+ /*sidebar*/
+ .side-bar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    background-color: #232222;
+  }
+  
+  .side-bar .menu{
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .side-bar .menu .item .motor-logo{
+    padding-bottom: 10px;
+  }
+  
+  .side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .side-bar .menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    /* padding: 10px 20px;  */
+    line-height: 15px;
+  }
+
+  .side-bar .menu .item ul{
+    padding-bottom: 30px; /*Add padding to the bottom of the ul*/
+  }
+  
+  .side-bar .menu .item ul.sub-menu .sub-item{
+    color: #ffffffc9;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  
+  .menu a .side-bar-title-1{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#1590F5;
+    width: 100%;
+    padding: 10px 20px; /*this is to apply padding inside the padding*/
+}
+
+.menu a .side-bar-title-2{
+font-family: "Poppins", sans-serif;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  /* background-color: #fb59ce;  */
+  width: 100%;
+  padding: 10px 20px; /*this is to apply padding inside the padding*/
+}
+
+
+
+  
+.side-bar .menu .item ul.sub-menu li{
+    display: block;
+    font-size: 18px;
+}
+
+
+
+.side-bar ul.sub-menu li.sub-item{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+
+/* for the small li letters */
+.side-bar .menu .item ul.sub-menu .sub-item:hover{
+    background-color: #90ccfd;
+    color: #000000;
+}
+.side-bar li:hover ul.sub-menu{
+    display: block;
+}
+
+.side-bar .menu .item .motor-logo a{
+    padding-left: 65px;
+    margin-bottom: 30px;
+}
+  
+/* .side-bar ul li:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+} */
+  
+/* Big title */
+  .side-bar .menu .item a:hover{
+    background-color:#1590F5;
+    transition: 0.3s ease;
+  } 
+
+
+
+  .side-bar .menu .item .sub-menu{
+    background-color: #232222;
+  }

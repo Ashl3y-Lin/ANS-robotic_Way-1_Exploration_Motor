@@ -1,0 +1,85 @@
+.app{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    /* width: 90%;
+    max-width: 600px;
+    margin: auto; */
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.quiz{
+    padding: 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-weight: 900;
+    background-color: #fff;
+    color: #222;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+   text-align: start; 
+   cursor: pointer;
+}
+
+.btn:hover:not([disabled]){
+    background-color: #1590F5;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-button{
+    background-color: rgb(36, 36, 94);
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: 0;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    display: none;
+}
+
+#next-button:hover{
+    background-color:#1590F5;
+}
+
+.answer-buttons{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+
+.correct{ 
+    background-color: #9aeabc; /*when you click the right answer; it will show green*/
+}
+
+.incorrect{
+    background-color: red; /*it will  show red when it's click. can be multiple.*/
+}
